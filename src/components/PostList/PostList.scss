@@ -1,0 +1,15 @@
+.list-group {
+  height: 315px;
+  overflow-y:auto;
+}
+
+.list-group::-webkit-scrollbar{
+  background-color: #b9b9b9;
+  width: 10px;
+  border-radius: 10px;
+}
+
+.list-group::-webkit-scrollbar-thumb{
+  background-color: rgb(0, 132, 255);
+  border-radius: 10px;
+}
