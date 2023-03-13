@@ -2,6 +2,82 @@
   font-size: 17px;
 }
 
-.list-group-title{
+.list-group-title {
   font-size: 18px;
+}
+
+.list-group-item {
+  cursor: pointer;
+}
+
+.list-group-item.important .fa-star {
+  color: grey !important;
+}
+
+.list-group-item.important .list-group-title {
+  color: rgb(255, 174, 0);
+}
+
+.fa-heart {
+  transition: all .2s linear;
+  transform: translateX(100%);
+  opacity: 0;
+}
+
+.list-group-item.like .fa-heart {
+  transition: all .2s linear;
+  transform: translateX(0);
+  opacity: 1;
+}
+
+@media only screen and (max-width: 465px) {
+  .list-group-title {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .list-group-item {
+    padding: 10px !important;
+  }
+
+  .fa-heart {
+    margin: {
+      top: 8.5px;
+    }
+  }
+}
+
+@media only screen and (max-width: 410px) {
+  .btn i {
+    font-size: 13px;
+  }
+
+  .list-group-title {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  .btn {
+    padding: 10px 20px !important;
+  }
+
+  .btn i {
+    font-size: 12px;
+  }
+
+  .list-group-title {
+    font-size: 13px;
+  }
+}
+
+@media only screen and (max-width: 365px) {
+  .list-group-item {
+    padding: 7.5px !important;
+  }
+
+  .fa-heart {
+    font-size: 13px;
+  }
 }
